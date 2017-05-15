@@ -26,6 +26,14 @@ public class BilboquetForeverStoreContextListener implements ServletContextListe
       // find the newest product in the store and set it as a context attribute
       Product newestProduct = ProductDB.selectNewestProduct();
       sContext.setAttribute("newestProduct", newestProduct);
+      
+      Product topProduct1 = ProductDB.selecttopProduct(1);
+      sContext.setAttribute("topProduct1", topProduct1);
+      Product topProduct2 = ProductDB.selecttopProduct(2);
+      sContext.setAttribute("topProduct2", topProduct2);
+      Product topProduct3 = ProductDB.selecttopProduct(3);
+      sContext.setAttribute("topProduct3", topProduct3);
+
    }
 
    @Override

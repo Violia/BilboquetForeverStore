@@ -15,4 +15,5 @@
 </div>
 
 <jsp:include page="/news.jsp" />
+<jsp:include page="/topproduct.jsp" />
 <jsp:include page="/footer.jsp" />
